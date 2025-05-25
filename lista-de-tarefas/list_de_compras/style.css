@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f0f2f5;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 5px;
+}
+
+#taskInput {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#addButton, #updateButton, #removeButton, #deletButton, #clearButton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+#addButton {
+    background-color: #3498db;
+}
+
+#addButton:hover {
+    background-color: #2980b9;
+}
+
+#deletButton {
+    background-color: #eb0505;
+}
+
+#deletButton:hover {
+    background-color: #b80e0e;
+}
+
+#updateButton {
+    background-color: #f39c12;
+}
+
+#updateButton:hover {
+    background-color: #e67e22;
+}
+
+#removeButton {
+    background-color: red;
+}
+
+#removeButton:hover {
+    background-color: #7c0501;
+}
+#clearButton {
+    background-color: grey;
+}
+#clearButton:hover{
+    background-color: #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+li:hover {
+    background-color: #f8f9fa;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+.task-counter {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
